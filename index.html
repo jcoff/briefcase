@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="player.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery.timeliny.css" />
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="container clearfix">
+				<ul class="nav">
+				 	<li><div class="menuWrapper"><a href="#home">home</a><div class="eqWrapper"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				 	<li><div class="menuWrapper"><a href="#about">about</a><div class="eqWrapper"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				 	<li><div class="menuWrapper"><a href="#music">music</a><div class="eqWrapper"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				 	<li><div class="menuWrapper"><a href="#tours">tours</a><div class="eqWrapper"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				 	<li><div class="menuWrapper"><a href="#footer">contact</a><div class="eqWrapper"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				
+				 </ul> 
+			</div>
+		</div>
+		<div id="home">
+			<div class="container clearfix">
+				<div id="backgroundwords">
+					<div>	
+					<p>we are</p>
+					<p>the band</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div id="about">	
+			<div class="container clearfix">
+				<div id="musicianname">
+				<div>
+					<h1>Jimi</h1>
+					<h1>Hendrix</h1>
+				</div>	
+				</div>
+				<div id="membersinfo">
+					<div id="bandmembers">
+						<table border="">
+							<tr><td><div class="names">Jimi Hendrix</div></td><td><img src="img/Ellipse.png" alt=""></td><td>guitar</td></tr>
+							<tr><td><div class="names">Noel Redding</div></td><td><img src="img/Ellipse.png" alt=""></td><td>Bass</td></tr>
+							<tr><td><div class="names">Mitch Mitchell</div></td><td><img src="img/Ellipse.png" alt=""></td><td>drums</td></tr>
+						</table>
+					</div>
+					<h2>Meet our band</h2>
+					<p>Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="music">
+			<div class="container">
+				<div id="discography">
+					<div id="vinylWrapper">
+						<div id="cover"><img id="toner" src="img/toner_goldSmall2.png" alt=""><img id="slide" class="slide" src="img/covers/Vinyl-BoldAsLoveS2.png" alt=""><img id="coverpic" src='img/covers/Cover-BoldAsLove2.png' alt=""><img id="gramophone" src='img/player_gold.png' alt=""></div>
+					</div>
+					<h2>Discography</h2>
+					<div id="discs">
+						<ul class="disclist">
+							<li><a href="#">Kiss The Sky</a><img class="buyDisc" src="img/Buy.png" alt=""><img id="album-KTS" class="listenDisc" src="img/Listen.png" alt=""><p>1984</p><img src="img/Ellipse-Light.png" alt="" class="discsEllipse"></li>
+							<li><a href="#">Electric Ladyland</a><img class="buyDisc" src="img/Buy.png" alt=""><img id="album-EL" class="listenDisc" src="img/Listen.png" alt=""><p>1968</p><img src="img/Ellipse-Light.png" alt="" class="discsEllipse"></li>
+							<li><a href="#">Axis: Bold As Love</a><img class="buyDisc" src="img/Buy.png" alt=""><img id="album-BAL" class="listenDisc" src="img/Listen.png" alt=""><p>1967</p><img src="img/Ellipse-Light.png" alt="" class="discsEllipse"></li>
+							<li><a href="#">Are You Experienced</a><img class="buyDisc" src="img/Buy.png" alt=""><img id="album-AYE" class="listenDisc" src="img/Listen.png" alt=""><p>1967</p><img src="img/Ellipse-Light.png" alt="" class="discsEllipse"></li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="nowPlaying" class="musicRightCol">
+					<h2>Now Playing</h2>
+					<h3>Axis: Bold As Love</h3>
+					<p>06. Little Wing</p>
+				</div>
+				<div id="playerWrapper" class="musicRightCol">
+					
+
+					<audio id="mytrack" >
+						<source src="music/LittleWing.mp3" type="audio/mp3"></audio>
+					</audio>
+					<nav>
+						<div id="buttons">
+							<button type="button" id="playButton">&nbsp</button>
+							<button type="button" id="muteButton">&nbsp</button>
+							<span id="currentTime">0:00</span>
+							<span id="fullDuration">0:00</span>
+
+						</div>
+						<div id="defaultBar">
+							<div id="progressBar"></div>
+						</div>
+					</nav>
+				</div>
+				<div id="tracklistWrapper" class="musicRightCol">
+					<div id="tracklist1" class="tracklist">
+						<h3>Axis: Bold As Love</h3>
+						<ul class="tracks">
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/BoldAsLove.mp3', 'Axis: Bold As Love', '01. Bold As Love')" alt=""><a class="playable">01. Bold As Love</a></li>
+								<li><img src="img/Play-small-light.png"><a>02. Up From The Skies</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>03. Spanish Castle Magic</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>04. Wait Until Tomorrow</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>05. Ain't No Telling</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/LittleWing.mp3', 'Axis: Bold As Love', '06. Little Wing')" alt=""><a class="playable">06. Little Wing</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>07. If 6 Was 9</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>08. You Got Me Floatin'</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/CastlesMadeOfSand.mp3', 'Axis: Bold As Love', '09. Castles Made of Sand')" alt=""><a class="playable">09. Castles Made of Sand</a></li>
+						</ul>	
+					</div>	
+					<div id="tracklist2" class="tracklist">
+						<h3>Kiss The Sky</h3>
+						<ul class="tracks">
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/LittleWing.mp3', 'Kiss The Sky', '01. Little Wing')" alt=""><a class="playable">01. Little Wing</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/CastlesMadeOfSand.mp3', 'Kiss The Sky', '02. Castles Made of Sand')" alt=""><a class="playable">02. Castles Made of Sand</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/BoldAsLove.mp3', 'Kiss The Sky', '03. Bold As Love')" alt=""><a class="playable">03. Bold As Love</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>04. Stepping Stone</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/BornUnder.mp3', 'Kiss The Sky', '05. Born Under A Bad Sign')" alt=""><a class="playable">05. Born Under A Bad Sign</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>06. Killing Floor</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/CanYouSeeMe.mp3', 'Kiss The Sky', '07. Can You See Me')" alt=""><a class="playable">07. Can You See Me</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>08. Red House</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/Angel.mp3', 'Kiss The Sky', '09. Angel')" alt=""><a class="playable">09. Angel</a></li>
+								
+						</ul>	
+					</div>	
+					<div id="tracklist3" class="tracklist">
+						<h3>Electric Ladyland</h3>
+						<ul class="tracks">
+								<li><img src="img/Play-small-light.png" alt=""><a>01. Suite IV Electric Overture</a></li>
+								<li><img src="img/Play-small-light.png"><a>02. Givin Em What They Love</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>03. Q.U.E.E.N.</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>04. Electric Lady</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/AllAlongTheWatchtower.mp3', 'Electric Ladyland', '05. All Along The Watchtower')" alt=""><a class="playable">05. All Along The Watchtower</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>06. Primetime</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>07. We Were Rock&Roll</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>08. The Chrome Shoppe</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>09. Dance Apocalyptic</a></li>
+						</ul>	
+					</div>	
+					<div id="tracklist4" class="tracklist">
+						<h3>Are You Experienced</h3>
+						<ul class="tracks">
+								<li><img src="img/Play-small-light.png"><a>01. Foxey Lady</a></li>
+								<li><img src="img/Play-small-light.png"><a>02. Maniac Depression</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>03. Red House</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>04. Can You See Me</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>05. Love Or Confusion</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>06. I Don't Live Today</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>07. May this be love</a></li>
+								<li><img src="img/Play-small-light.png" alt=""><a>08. Bleeding Heart</a></li>
+								<li><img class="playable" src="img/Play-small.png" onclick="trackSrc('music/AllAlongTheWatchtower.mp3', 'Electric Ladyland', '09. All Along The Watchtower')" alt=""><a class="playable">09. All Along The Watchtower</a></li>
+						</ul>	
+					</div>	
+				</div>
+
+				
+			</div>
+		</div>
+		<div id="tours">
+			<div class="container">
+				<div id="timeline">
+					<h2>Tour dates</h2>
+					<div id="timelineWrapper">
+						<div id="example1">
+							<div data-year="1" class="passed">Wachovia Spectrum Center Philadelphia April 12</div>
+							<div data-year="2" class="passed">Sam Houston Coliseum, Houston April 19</div>
+							<div data-year="3" class="passed">O.co Coliseum, Oakland April 27</div>
+							<div data-year="4" class="passed">Rhode Island Auditorium, Providence May 17</div>
+							<div data-year="5" class="passed">Madison Square Garden. Manhattan, NY May 18</div>
+							<div data-year="6" class="active">Woodstock Bethel, NY - August 15</div>
+							<div data-year="7">The Forum Inglewood, CA February 21</div>
+							<div data-year="8">Mayo Civic Centre Rochester, MN Apr 17</div>
+							<div data-year="9">HemisFair Arena  San Antonio, TX May 10</div>
+							<div data-year="10">Temple University, Philadelphia May 16</div>
+							<div data-year="11">Cincinnati, OH May 22</div>
+						</div>				
+					</div>	
+				</div>
+				<div id="tickets">
+					<ul>
+						<li><div class="ticketline">
+							<div class="concertdate">
+								<h2>15</h2>
+								<p>aug</p>
+								<p>1969</p>
+							</div>
+							<div class="divider">&nbsp</div>
+							<div class="concertinfo">Woodstock Bethel</div>
+							<img src="img/Buy-ticket.png" alt="">
+							</div>
+						</li>
+						<li><div class="ticketline">
+							<div class="concertdate">
+								<h2>21</h2>
+								<p>feb</p>
+								<p>1970</p>
+							</div>
+							<div class="divider">&nbsp</div>
+							<div class="concertinfo">The Forum Inglewood</div>
+							<img src="img/Buy-ticket.png" alt="">
+							</div>
+						</li>
+						<li><div class="ticketline">
+							<div class="concertdate">
+								<h2>17</h2>
+								<p>apr</p>
+								<p>1970</p>
+							</div>
+							<div class="divider">&nbsp</div>
+							<div class="concertinfo">Mayo Civic Centre Rochester</div>
+							<img src="img/Buy-ticket.png" alt="">
+							</div>
+						</li>
+						<li><div class="ticketline">
+							<div class="concertdate">
+								<h2>10</h2>
+								<p>may</p>
+								<p>1970</p>
+							</div>
+							<div class="divider">&nbsp</div>
+							<div class="concertinfo">HemisFair Arena  San Antonio</div>
+							<img src="img/Buy-ticket.png" alt="">
+							</div>
+						</li>
+						<li><div class="ticketline">
+							<div class="concertdate">
+								<h2>16</h2>
+								<p>may</p>
+								<p>1970</p>
+							</div>
+							<div class="divider">&nbsp</div>
+							<div class="concertinfo">Temple University, Phila</div>
+							<img src="img/Buy-ticket.png" alt="">
+							</div>
+						</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<div id="footer">
+			<div id="feedback">
+				<h2>connect with us</h2>
+				<div id="subscribeWrapper">
+					<div id="subscribe"><h3>subscribe</h3><div id="inputArea"><input type="text"></div></div>
+					<img id="facebook" src="img/facebook.png" alt="">
+					<img id="youtube" src="img/youtube.png" alt="">
+				</div>
+				<div class="container clearfix">
+				<ul class="navBottom">
+				 	<li><div class="menuWrapper"><a href="#home">home</a><div class="eqWrapperB"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				 	<li><div class="menuWrapper"><a href="#about">about</a><div class="eqWrapperB"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				 	<li><div class="menuWrapper"><a href="#music">music</a><div class="eqWrapperB"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				 	<li><div class="menuWrapper"><a href="#tours">tours</a><div class="eqWrapperB"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				 	<li><div class="menuWrapper"><a href="#footer">contact</a><div class="eqWrapperB"><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span><span>&nbsp</span></div></div></li>
+				
+				 </ul>
+			</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/controls.js"></script>
+	<script type="text/javascript" src="js/pure.js"></script>
+	<script src="js/jquery.timeliny.js"></script>
+	<script src="js/eq.js"></script>
+</body>
+</html>

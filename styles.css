@@ -1,0 +1,1081 @@
+@import "reset.css";
+
+@font-face {
+    font-family: Lora-Bold;
+    src: url('font/Lora-Bold.ttf');
+}
+
+@font-face {
+	font-family: Lora-Regular;
+	src: url('font/Lora-Regular.ttf');
+}
+
+@font-face {
+	font-family: Oswald-Bold;
+	src: url('font/Oswald-Bold.ttf');
+}
+
+@font-face {
+	font-family: Oswald-Regular;
+	src: url('font/Oswald-Regular.ttf');
+}
+
+@font-face {
+	font-family: Oswald-Light;
+	src: url('font/Oswald-Light.ttf');
+}
+
+@font-face {
+	font-family: Lora-Italic;
+	src: url('font/Lora-Italic.ttf');
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: #fff ;
+	
+}
+
+#wrapper {
+	width: 100%;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+.container {
+	max-width: 1490px;
+	margin: 0 auto;
+}
+
+#header {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	padding: 20px 0;
+}
+
+.nav {
+	float: left;
+}
+
+.nav li {
+	float: left;
+	margin-left: 30px;
+}
+
+.nav a {
+	text-transform: uppercase;
+	font: 18px Lora-Bold;
+	color: #241c18;
+	padding: 0 1px;
+}
+
+.menuWrapper {
+	height: 60px;
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0 1px;
+}
+.eqWrapper {
+	overflow: hidden;
+	width: 100%;
+	display: block;
+	
+}
+.nav li:last-child .eqWrapper {
+	padding-left: 2px;
+}
+.eqWrapper span {
+	  background-color: #7E6558;
+	  display: block;
+	  width: 5px;
+	  margin-top: -0.2em;
+	  margin-left: 1px;
+	  margin-right: 1px;
+	  float: left;
+	  visibility: hidden;
+	  opacity: 0;
+	  transition: visibility 1.4s, opacity 0.6s linear;
+}
+.nav a:hover + .eqWrapper span {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+#home {
+	height: 960px;
+	background: #97847a url(img/home-bg2.jpg) no-repeat center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	   background-size: cover;
+}
+
+
+#backgroundwords {
+	text-align: center;
+	float: right;
+	padding-top: 188px;
+	padding-right: 65px;
+	height: 540px;
+	width: 420px;
+	background: url(img/background-words2.png) no-repeat center  bottom;
+}
+
+#backgroundwords div {
+	padding-top: 155px;
+	font: 100px Oswald-Bold;
+	color: #e4dddb;
+	display: block;
+	text-transform: uppercase;
+	 top: 50%;
+}
+
+#backgroundwords p {line-height: 115px;}
+#backgroundwords div p:nth-child(2) {
+	color: #241c18;
+}
+
+#about {
+	background: #faf6f6;
+	display: inline-block;
+	width: 100%;
+}
+
+#about .container{
+	height: 965px;
+}
+
+#musicianname {
+	background: #faf6f6  url(img/Hendrix.png) no-repeat 
+	center bottom;
+	float: left;
+	display: inline-block;
+	height: 100%;	
+}
+
+#musicianname div {
+	padding-top: 600px;
+}
+
+#musicianname h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #826b60;
+	font: 100px Oswald-Bold;
+	display: block;
+	padding: 0 0 0 310px;
+}
+
+#musicianname h1:nth-child(2) {
+	color: #241c18;
+	line-height: 80px;
+}
+
+
+#membersinfo {
+	width: 445px;
+	float: right;
+	padding-top: 100px;
+	padding-left: 140px;
+	padding-right: 7%;
+}
+
+#membersinfo p{
+	width: 445px;
+	padding: 28px 40px 0 0 ;
+	font: 18px Lora-Regular;
+	color: #241c18;
+	line-height: 37px;
+}
+
+#membersinfo h2 {
+	text-align: center;
+	font: 36px Oswald-Regular;
+	padding-top: 95px;
+	padding-bottom: 25px;
+}
+#bandmembers {
+	padding-top: 170px;
+}
+
+#bandmembers table {
+	transform: rotate(-90deg);
+}
+
+#bandmembers table, th, td {
+	margin: 0 auto;
+	font: 12px Lora-Bold;
+	color: #826b60;
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-left: 5px;
+}
+
+.names {
+	text-align: right;
+	padding-right: 5px;
+}
+
+#music {
+	background: #fff;
+}
+
+#music .container {
+	height: 965px;
+}
+
+#discography {
+	display: inline-block;
+	margin-top: 98px;
+	float: left;
+	max-width: 56%;
+}
+
+
+#vinylWrapper {
+	height: 346px;
+	max-width: 826px;
+}
+#cover {
+	height: 318px;
+	float: left;
+	position: relative;
+}
+#cover img {
+	float: right;
+}
+#slide {
+   position: relative;
+   margin-top: 11px;
+}
+
+.vinylWink  {
+	transition: 2.7s;
+  animation: spin-right 1.7s ease-out 1;
+  left: 435px;
+}
+.slide {
+	left: 335px;
+	transition: 0.9s;
+}
+.slide-covered {
+	left: 300px;
+	display: none;
+}
+
+#coverpic {
+	position: absolute;
+	left: 255px;
+}
+#gramophone {
+	position: absolute;
+	left: 166px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#toner {
+	top: -130px;
+	left: 480px;
+	z-index: 2;
+	position: absolute;
+	display: none;
+	opacity: 1;
+}
+
+.player  {
+	transition: 2.6s;
+  left: 555px;
+	animation: spin-right 1.7s ease-out 1;
+}
+.loadVinyl {
+	z-index: 1;
+	transition: 2.9s;
+	top: -2px;
+	left: 203px;
+	animation: spin-left 2s ease-out 1;
+}
+.play {
+	z-index: 1;
+	transition: 0s;
+	top: -2px;
+	left: 203px;
+	animation: spin-right 1.9s linear infinite;
+}
+.tonerSpin {
+	animation: toner 1.5s ease-out 1;
+	-webkit-animation-fill-mode: forwards;
+}
+.vinylOnPause {
+	z-index: 1;
+	transition: 2.9s;
+	top: -2px;
+	left: 203px;
+}
+
+#discography h2 {
+	font: 36px Oswald-Regular;
+	padding-top: 57px;
+	margin-left: 30px;
+	padding-bottom: 48px;
+}
+
+#discs {
+	margin-left: 30px;
+	width: 96%;
+}
+
+.disclist a{
+	font: 30px Oswald-Light;
+	color: #241c18;
+}
+.disclist img {
+	float: right;
+	margin-top: 5px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+.disclist img:hover {
+	opacity: 0.7;
+}
+
+.discsEllipse {
+	float: right;
+	padding-top: 12px;
+}
+
+.disclist p {
+	font: 30px Oswald-Light;
+	color: #241c18;
+	float: right;
+	margin-right: 65px;
+	margin-left: 40px;
+}
+
+.disclist li {
+	line-height: 60px;
+}
+
+.musicRightCol {
+	float: right;
+	max-width: 44%;
+	min-width: 34%;
+	margin-right: 30px;
+}
+
+#nowPlaying {
+	margin-top: 130px;
+}
+
+#nowPlaying h2{
+	font: 36px Oswald-Regular;
+	color: #241c18;
+	margin-bottom: 37px;
+}
+
+#nowPlaying h3, .tracklist h3 {
+	font: 30px Oswald-Light;
+	color: #241c18;
+}
+
+#nowPlaying p:nth-child(3) {
+	font: 18px Lora-Italic;
+	color: #826b60;
+	margin-top: 22px;
+	margin-bottom: 26px;
+}
+
+.tracklist h3 {
+	padding-bottom: 37px;
+}
+
+.tracks a, .tracks li {
+	font: 18px Lora-Italic;
+	color: #826b60;
+	line-height: 27px;
+}
+
+.tracks a:not(.playable) {
+	opacity: 0.6;
+}
+
+.tracks li img {
+	margin-right: 20px;
+}
+
+.tracks li img.playable {
+	cursor: pointer;
+}
+
+.playAnimation {
+	animation: animateButt 1.9s linear infinite;
+}
+
+
+#tracklist1 {
+	display: block;
+}
+
+#tracklist2,  #tracklist3, #tracklist4{
+	display: none;
+}
+
+#tours {
+	background-color: #f1eeed;
+}
+
+#tours .container {
+	height: 965px;
+	text-align: center;
+}
+
+#timeline h2 {
+	font: 36px Oswald-Regular;
+	color: #241c18;
+	padding-top: 82px;
+	padding-bottom: 64px;
+}
+
+#timelineWrapper {
+	width: 57%;
+	margin: 0 auto;
+	height: 370px;
+}
+
+#tickets {
+	margin: 60px auto;
+	width: 82%;
+	height: 276px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+#tickets li {
+	padding-bottom: 40px;
+}
+
+.ticketline {
+	height: 60px;
+}
+
+.concertdate {
+	display:table;
+	height: 57px;
+	width: 93px;
+}
+
+.concertdate h2{
+	font: 50px Oswald-Bold;
+	color: #241c18;
+	text-align: left;
+	width: 43px;
+}
+
+.concertdate p {
+	text-align: left;
+	margin-left: 48px;
+	font: 23px Oswald-Bold;
+	color: #241c18;
+	text-transform: uppercase;
+}
+
+.concertdate p:nth-child(2){
+	margin-top: -66px;
+}
+
+.concertdate p:nth-child(3) {
+	margin-top: -9px;
+}
+
+.divider {
+	height: 45px;
+	width: 6px;
+	background-color: #e4dddb;
+	margin-top: -52px;
+	margin-left: 115px;
+
+}
+
+.concertinfo {
+	float: left;
+	margin-top: -46px;
+	margin-left: 140px;
+	font: 30px Oswald-Light;
+	color: #241c18;
+}
+.ticketline img {
+	float: right;
+	margin-top: -40px;
+	margin-right: 125px;
+	cursor: pointer;
+}
+.ticketline img:hover {
+	opacity: 0.7;
+}
+
+#footer {
+	width: 100%;
+}
+#feedback {
+	height: 962px;
+	background: #8c776c url(img/footerHendrix.jpg) no-repeat center bottom;
+	text-align: center;
+	position: relative;
+}
+#feedback h2 {
+	font: 80px Oswald-Bold;
+	color: #241c18;
+	text-transform: uppercase;
+	padding-top: 85px;
+	padding-bottom: 65px;
+}
+
+#subscribeWrapper {
+	width:728px;
+	height:65px;
+	margin: 0 auto;
+}
+#subscribe {
+	width: 528px;
+	height: 52px;
+	background: url(img/subscribeButton.png) no-repeat center bottom;
+	padding-top: 12px;
+	text-align: left;
+}
+#subscribe h3 {
+	font: 36px Oswald-Bold;
+	color: #fff;
+	margin-left: 30px;
+	margin-top: -3px;
+	text-transform: uppercase;
+}
+#inputArea {
+	padding-bottom:25px;
+}
+#subscribe input[type='text'], textarea {
+	background-color: rgba(255,0,0,0);
+	font: 27px Lora-Regular;
+	color: #241c18;
+	height: 1.3em;
+	width: 290px;
+	float: right;
+	margin-right: 5px;
+	margin-top: -1.56em;
+	border: none;
+	outline: none;
+}
+#facebook {
+	float: right;
+	margin-top: -58px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+#youtube {
+	float: right;
+	margin-top: -58px;
+	cursor: pointer;
+}
+
+.navBottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.navBottom li {
+	float: left;
+	margin-right: 30px;
+}
+.navBottom a {
+	text-transform: uppercase;
+	font: 18px Lora-Bold;
+	color: #e4dddb;
+	padding: 0 1px;
+}
+.navBottom a:hover + .eqWrapperB span {
+	visibility: visible;
+	opacity: 1;
+}
+.eqWrapperB span {
+	  background-color: #7E6558;
+	  display: block;
+	  width: 5px;
+	  margin-top: -0.2em;
+	  margin-left: 1px;
+	  margin-right: 1px;
+	  float: left;
+	  visibility: hidden;
+	  opacity: 0;
+	  transition: visibility 1.4s, opacity 0.6s linear;
+}
+.eqWrapperB {
+	overflow: hidden;
+	width: 100%;
+	display: block;
+	
+}
+.navBottom li:last-child .eqWrapperB {
+	padding-left: 2px;
+}
+
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+       -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+         -o-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes toner {
+  100% {
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20deg);
+            transform: rotate(20deg);
+		 
+           
+  }
+}
+
+@keyframes animateButt {
+	from {
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		-ms-opacity: 1;
+		-o-opacity: 1;
+		opacity: 1;
+	}
+
+	50% {
+		-webkit-opacity: 0.4;
+		-moz-opacity: 0.4;
+		-ms-opacity: 0.4;
+		-o-opacity: 0.4;
+		opacity: 0.4;
+	}
+
+	100% {
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		-ms-opacity: 1;
+		-o-opacity: 1;
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+@media screen and ( max-width: 1366px) {
+	#home {
+		height: 100%;
+	}
+	#about {
+	}
+	#about .container{
+		height: 100%;
+		height: 800px;
+	}
+	#musicianname div {
+		padding-top: 500px;
+	}
+	#bandmembers {
+		padding-top: 100px;
+	}
+
+	#coverpic {
+		left: 255px;
+	}
+}
+@media screen and ( max-width: 1359px) {
+	#membersinfo {
+		padding-left: 0;
+		padding-right: 0;
+		width: 40%;
+	}
+	#membersinfo p {
+		width: 100%;
+	}
+	#musicianname {
+		background-size: 77%;
+		width: 58%;
+	}
+	#musicianname div {
+		padding-top: 400px;
+	}
+	#musicianname h1 {
+		padding-left: 140px;
+	}
+}
+/*ipad*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+ {
+ 	#membersinfo p {
+		padding: 0 0 0 0;
+ 	}
+ 	#discography {
+ 		margin-top: 10px;
+ 	}
+ 	#nowPlaying {
+ 		margin-top: 55px;
+ 	}
+	.slide {
+		top: 40px;
+		left: 208px;
+		height: 185px;
+	}
+	#coverpic {
+		top: 40px;
+		left: 140px;
+		height: 200px;
+	}
+	#gramophone {
+		top: 44px;
+		left: 186px;
+		height: 200px;
+	}
+	#toner {
+		top: -42px;
+		left: 379px;
+		height: 269px;
+	}
+	.listenDisc {
+		content: url("img/Listen-small.png");
+	}
+	.buyDisc {
+		content: url("img/Buy-small.png");
+	}
+	.disclist p {
+		margin-right: 20px;
+	}
+	.discsEllipse {
+	}
+	.player  {
+		animation: none;
+	}
+	.play {
+		animation: spin-right 1.9s linear infinite;
+	}
+	
+}
+/*Ipad portrait*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) 
+{
+	#coverpic {
+		left: 100px;
+	}
+	#toner {
+		left: 339px;
+	}
+	#gramophone {
+		left: 146px;
+	}
+	.slide {
+		left: 168px;
+	}
+	.disclist a {
+		font-size: 21px;
+	}
+	.disclist p {
+		margin-right: 5px;
+		margin-top: 10px;
+		font-size: 21px;
+	}
+
+}
+@media screen and ( max-width: 775px) {
+	body html {
+		height: 100%;
+	}
+	#home {
+		height: 100vh;
+		padding: 0 auto;
+		padding-top: 50%;
+	}
+	#header .nav {
+		display: none;
+	}
+	#backgroundwords {
+		padding-right: 0;
+		padding-top: 0;
+		float: left;
+		margin: 0 auto;
+		position: relative;
+		background-image: none;
+		width: 100%;
+		padding: 0 0;
+		height: 100%;
+	}
+	#backgroundwords p {
+		font-size: 90px;
+		line-height: 110px; 
+	}
+	#backgroundwords div {
+		padding-top: 0;
+	}
+	
+	#about  {
+		display: inline-block;
+	}
+	#musicianname {
+		float: none;
+		width: 100%;
+		background-size: auto 100%;
+		background-position: center bottom;
+		height: 90vh;
+	}
+	#musicianname div {
+		position: relative;
+		padding-top: 77%;
+	}
+	#musicianname h1 {
+		padding-left: 0; 
+		font-size: 80px;
+	}
+	#membersinfo {
+		width: 100%;
+		text-align: center;
+		padding: 0 0 0 0;
+		overflow: hidden;
+	}
+	#membersinfo p {
+   width: 100%;
+	 text-align: center;
+	}
+
+	#music {
+		display: inline-block;
+		overflow: hidden;
+	}
+}
+
+@media only screen 
+and (max-device-width : 750px)  {
+	#musicianname {
+		background-size: 100% auto;
+	}
+	#discography {		width: 100%;
+		max-width: none;
+		margin-top: 25px;
+	}
+	#vinylWrapper {
+		height: 263px;	
+	}
+	.slide {
+		left: 75px;
+		transition: 0s;
+		height: 185px;
+	}
+	.vinylWink {
+		height: 200px;
+		animation: none;
+		left: 45px;
+	}
+	#coverpic {
+		height: 200px;
+		left: 5px;
+	}
+	#gramophone {
+		top: 3px;
+		left: 53px;
+		height: 200px;
+	}
+	#toner {
+		top: -80px;
+		left: 245px;
+		height: 269px;
+	}
+	.musicRightCol {
+		max-width: 100%;
+		float: left;
+		margin-left: 30px;
+	}
+	#playerWrapper {
+		width: 80%;
+	}
+	#discs {
+	margin-left: 5px;
+	width: 99%;
+	}
+
+	.disclist a{
+		font: 21px Oswald-Light;
+		color: #241c18;
+	}
+	.disclist img {
+		float: right;
+		margin-top: 5px;
+		margin-left: 0;
+		margin-right: 13px;
+		cursor: pointer;
+	}
+	.disclist img:hover {
+		opacity: 0.7;
+	}
+
+	.discsEllipse {
+		display: none;
+	}
+
+	.disclist p {
+		font: 21px Oswald-Light;
+		float: right;
+		margin-right: 25px;
+		margin-left: 0;
+		padding-top: 10px;
+	}
+
+	.disclist li {
+		line-height: 60px;
+	}
+	.listenDisc {
+		content: url("img/Listen-small.png");
+	}
+	.buyDisc {
+		content: url("img/Buy-small.png");
+	}
+	#nowPlaying {
+		margin-top: 65px;
+	}
+	#tracklistWrapper {
+		padding-bottom: 20px;
+	}
+
+	#timelineWrapper {
+		width: 85%;
+	}
+	#tickets {
+		width: 90%;
+	}
+	.concertdate h2 {
+		font-size: 40px;
+	}
+	.concertdate p {
+		font-size: 19px;
+		margin-left: 40px;
+	}
+	.concertinfo {
+		font-size: 18px;
+		margin-left: 100px;
+		margin-top: -40px;
+	}
+	.ticketline img {
+		content: url("img/Buy-small.png");
+		display: none;
+	}
+	.concertdate p:nth-child(2) {
+		margin-top: -55px;
+	}
+	.divider {
+		margin-left: 88px;
+		height: 45px;
+		margin-top: -48px;
+	}
+	#feedback h2 {
+		font-size: 64px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		line-height: 80px;
+	}
+	#feedback {
+		background-size: auto 100%;
+	}
+	#subscribe {
+		width: 100%;
+		background: url(img/subscribeButton-small.png)
+		 no-repeat center bottom;
+	}
+	#subscribe h3 {
+		display: none;
+	}
+	#subscribeWrapper {
+		width: 100%;
+	}
+	#subscribe input[type='text'], textarea {
+	background-color: rgba(255,0,0,0);
+	font: 23px Lora-Regular;
+	color: #241c18;
+	height: 1.7em;
+	width: 167px;
+	float: right;
+	margin-right: 73px;
+	margin-top: 0.2em;
+	border: none;
+	outline: none;
+ }
+ #facebook {
+	float: right;
+	margin-top: 20px;
+	margin-left: 0;
+	margin-right: 110px;
+ }
+ #youtube {
+	float: left;
+	margin-top: 20px;
+	margin-left: 110px;
+ }
+ .navBottom {
+ 	display: none;
+ }
+	.player  {
+		animation: none;
+	}
+	.play {
+		animation: spin-right 1.9s linear infinite;
+	}
+}
+
+@media only screen 
+and (max-device-width : 320px) {
+	#subscribe input[type='text'], textarea {
+		margin-right: 32px;
+	}
+	#facebook {
+		margin-right: 80px;
+	}
+	#youtube {
+		margin-left: 80px;
+	}
+}
+
+
+
+
+
+
+
