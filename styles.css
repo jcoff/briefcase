@@ -129,6 +129,7 @@ a, a:hover {
 
 
 #backgroundwords {
+	overflow: hidden;
 	text-align: center;
 	float: right;
 	padding-top: 188px;
@@ -140,7 +141,7 @@ a, a:hover {
 
 #backgroundwords div {
 	padding-top: 155px;
-	font: 100px Oswald-Bold;
+	font: 90px Oswald-Bold;
 	color: #e4dddb;
 	display: block;
 	text-transform: uppercase;
@@ -181,6 +182,7 @@ a, a:hover {
 	font: 100px Oswald-Bold;
 	display: block;
 	padding: 0 0 0 310px;
+	text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
 }
 
 #musicianname h1:nth-child(2) {
@@ -842,8 +844,8 @@ and (orientation : portrait)
 		height: 100%;
 	}
 	#backgroundwords p {
-		font-size: 90px;
-		line-height: 110px; 
+		font-size: 60px;
+		line-height: 80px; 
 	}
 	#backgroundwords div {
 		padding-top: 0;

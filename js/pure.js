@@ -76,14 +76,14 @@ $("img#album-KTS").click(function( event ) {
 	if (functionIsRunning == false) {
 		changeCover('img/covers/Cover-KissTheSky-art2.png', 'img/covers/Vinyl-KissTheSky-art.png');
 		ShowContent('tracklist2', 'tracklist1', 'tracklist3', 'tracklist4');
-		trackSrc('music/CanYouSeeMe.mp3', 'Kiss The Sky', '07. Can You See Me');
+		trackSrc('music/CastlesMadeOfSand.mp3', 'Kiss The Sky', '05. Castles Made of Sand');
 	}
 });
 $("img#album-EL").click(function( event ) {
 	if (functionIsRunning == false) {
 		changeCover('img/covers/Cover-ElectricLadyland2.png', 'img/covers/Vinyl-ElectricLadyland.png'); 
 		ShowContent('tracklist3', 'tracklist1', 'tracklist2', 'tracklist4');
-		trackSrc('music/AllAlongTheWatchtower.mp3', 'Electric Ladyland', '05. All Along The Watchtower');
+		trackSrc('music/LittleMissStrange.mp3', 'Electric Ladyland', '05. Little Miss Strange');
 	}
 });
 $("img#album-BAL").click(function( event ) {
@@ -97,7 +97,7 @@ $("img#album-AYE").click(function( event ) {
 	if (functionIsRunning == false) {
 		changeCover('img/covers/Cover-AreYouExperienced2.png', 'img/covers/Vinyl-AreYouExperienced.png');
 		ShowContent('tracklist4', 'tracklist1', 'tracklist2', 'tracklist3');
-		trackSrc('music/AllAlongTheWatchtower.mp3', 'Electric Ladyland', '09. All Along The Watchtower')
+		trackSrc('music/CanYouSeeMe.mp3', 'Electric Ladyland', '04. Can You See Me')
 	}
 });
 
