@@ -55,7 +55,7 @@ function gramophoneActivation() {
 			next();
 		});
 	};
-
+/*add animation to playlist's button when track is launched*/
 $("img.playable").click(function( event ) {
 	$(".tracks img.playable").attr("src", "img/Play-small.png");
 		$(".playable").removeClass("playAnimation");
@@ -72,6 +72,7 @@ $("img.playable").click(function( event ) {
 	$(event.target).siblings( ".playable" ).addClass("playAnimation");
 });
 
+/*change cover and tracklist when album is switched*/
 $("img#album-KTS").click(function( event ) {
 	if (functionIsRunning == false) {
 		changeCover('img/covers/Cover-KissTheSky-art2.png', 'img/covers/Vinyl-KissTheSky-art.png');
